@@ -1,0 +1,32 @@
+only_leader_can_promote: true
+promotion_requires:
+  strategy:
+    - valid_strategy_schema
+    - source_recorded
+    - risk_file_exists
+    - no_api_keys
+    - leader_review
+  experiment:
+    - strategy_id_exists
+    - data_version_recorded
+    - code_version_recorded
+    - params_recorded
+    - cost_model_recorded
+    - slippage_model_recorded
+    - results_recorded
+    - leader_review
+  capital_update:
+    - source_recorded
+    - timestamp_recorded
+    - manual_or_verified_input
+    - leader_review
+    - risk_review_if_changes_trading_capital
+  order:
+    - structured_order_schema
+    - risk_control_pass
+    - human_approval_if_live
+    - leader_review
+  report:
+    - workflow_id_exists
+    - supporting_data_exists
+    - leader_review

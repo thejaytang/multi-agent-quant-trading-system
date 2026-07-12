@@ -1,0 +1,6 @@
+workspace: workspace
+persistent: persistent
+promotion_queue: workspace/promotion_queue
+outputs: outputs
+logs: logs
+quantconnect: quantconnect

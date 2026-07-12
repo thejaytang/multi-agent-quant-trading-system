@@ -1,0 +1,16 @@
+status: configured_stub
+external_connection: false
+external_requests_enabled: false
+credentials:
+  account_id_env: IBKR_ACCOUNT_ID
+connection:
+  auth_mode: tws_gateway_socket
+  host: 127.0.0.1
+  paper_tws_port: 7497
+  live_tws_port: 7496
+  client_id: 1
+  read_only: true
+safety:
+  default_mode: paper
+  live_trading_enabled: false
+  natural_language_orders_allowed: false

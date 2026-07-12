@@ -1,0 +1,10 @@
+max_single_position: 0.05
+max_total_equity_exposure: 0.80
+max_trading_capital_as_total_net_worth: 0.30
+max_single_strategy_as_total_net_worth: 0.10
+max_monthly_loss_as_total_net_worth: 0.02
+min_paper_trading_days_before_live: 30
+allow_leverage: false
+allow_options: false
+allow_short_selling: false
+live_trading_requires_human_approval: true

@@ -1,0 +1,10 @@
+currency_base: NOK
+capital_buckets:
+  - living_cash
+  - cash_reserve
+  - locked_capital
+  - investment_capital
+  - trading_capital
+  - deployable_capital
+manual_transfer_only: true
+max_trading_capital_as_total_net_worth: 0.30

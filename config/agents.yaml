@@ -1,0 +1,21 @@
+leader_agent:
+  can_create_subagents: true
+  can_assign_skills: true
+  can_call_all_agents: true
+  can_promote_to_persistent: true
+  can_override_risk_control: false
+  can_execute_live_trade: false
+risk_control_agent:
+  priority: highest
+  can_reject_trade: true
+  can_halt_system: true
+  rejection_can_be_overridden: false
+broker_execution_agent:
+  default_mode: paper
+  accepts_natural_language_orders: false
+  live_execution_requires:
+    - risk_approved
+    - human_approved
+all_subagents:
+  can_write_workspace: true
+  can_write_persistent: false

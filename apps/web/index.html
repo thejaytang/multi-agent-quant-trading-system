@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人复利系统</title>
+    <link rel="stylesheet" href="/styles.css?v=workstation-20260608af">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">PC</div>
+          <div>
+            <div class="brand-title" id="brand-title">个人复利系统</div>
+            <div class="brand-subtitle">localhost</div>
+          </div>
+        </div>
+        <nav class="nav" aria-label="主导航">
+          <button class="nav-item active" data-route="#/today" id="nav-today">今日</button>
+          <button class="nav-item" data-route="#/portfolio" id="nav-portfolio">组合与策略</button>
+          <button class="nav-item" data-route="#/system" id="nav-system">系统</button>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <h1 id="section-title">今日</h1>
+            <p id="context-line">等待快照</p>
+          </div>
+          <div class="actions">
+            <button id="language-toggle" class="button secondary" type="button">EN</button>
+            <button id="run-workflow" class="button secondary" type="button">运行分析</button>
+            <button id="refresh" class="button primary" type="button">刷新</button>
+          </div>
+        </header>
+
+        <section id="today" class="view active">
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="action-brief-title">行动摘要</h2>
+              <span id="action-brief-meta" class="meta-pill">运行</span>
+            </div>
+            <div id="action-brief" class="action-brief"></div>
+          </section>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="action-queue-title">持仓行动</h2>
+              <span id="action-queue-meta" class="meta-pill">持仓</span>
+            </div>
+            <div id="position-action-queue"></div>
+          </section>
+
+          <div class="content-grid">
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="daily-report-title">当前研究快照</h2>
+                <div class="status-strip" id="report-status"></div>
+              </div>
+              <div id="daily-report"></div>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="research-title">研究视角</h2>
+                <div class="segmented" id="research-tabs" role="tablist"></div>
+              </div>
+              <div id="research-lens"></div>
+            </section>
+          </div>
+        </section>
+
+        <section id="portfolio" class="view">
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="portfolio-summary-title">复利概览</h2>
+              <span id="portfolio-summary-meta" class="meta-pill">组合</span>
+            </div>
+            <div id="portfolio-metrics" class="metric-grid"></div>
+          </section>
+
+          <div class="content-grid">
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="compound-title">复利曲线</h2>
+              </div>
+              <canvas id="compound-chart" width="640" height="260" aria-label="复利曲线"></canvas>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="performance-title">收益表现</h2>
+              </div>
+              <div id="performance-summary"></div>
+            </section>
+          </div>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="holdings-title">当前持仓</h2>
+              <span id="holdings-meta" class="meta-pill">持仓</span>
+            </div>
+            <div id="portfolio-holdings"></div>
+          </section>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="strategy-library-title">策略库</h2>
+              <span id="strategy-library-meta" class="meta-pill">策略</span>
+            </div>
+            <div id="strategy-library"></div>
+          </section>
+        </section>
+
+        <section id="strategy-detail-page" class="view">
+          <div class="detail-toolbar">
+            <button id="back-to-portfolio" class="button secondary" type="button">返回组合与策略</button>
+          </div>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="strategy-detail-title">策略详情</h2>
+              <span id="strategy-detail-meta" class="meta-pill">策略</span>
+            </div>
+            <div id="strategy-detail-overview"></div>
+          </section>
+
+          <div class="content-grid">
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="strategy-signal-title">信号</h2>
+              </div>
+              <div id="strategy-detail-signals"></div>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="strategy-metrics-title">Backtest 指标</h2>
+              </div>
+              <div id="strategy-detail-metrics"></div>
+            </section>
+          </div>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="strategy-backtests-title">Backtest 运行记录</h2>
+            </div>
+            <div id="strategy-detail-backtests"></div>
+          </section>
+        </section>
+
+        <section id="system" class="view">
+          <div class="content-grid">
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="plugin-status-title">插件与 API 状态</h2>
+              </div>
+              <div id="system-sources"></div>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="account-status-title">账户</h2>
+              </div>
+              <div id="system-accounts"></div>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="automation-title">自动化时间表</h2>
+              </div>
+              <div id="system-automation"></div>
+            </section>
+
+            <section class="workspace-section">
+              <div class="section-heading">
+                <h2 id="memory-title">运行上下文</h2>
+              </div>
+              <div id="system-memory"></div>
+            </section>
+          </div>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="trace-title">Agent Trace</h2>
+            </div>
+            <div id="trace-list"></div>
+          </section>
+
+          <section class="workspace-section">
+            <div class="section-heading">
+              <h2 id="chat-title">Agent Chat</h2>
+            </div>
+            <form id="chat-form" class="chat-form">
+              <input id="chat-input" type="text" placeholder="询问风险、策略、市场或收益">
+              <button id="chat-submit" class="button primary" type="submit">提问</button>
+            </form>
+            <div id="chat-output" class="chat-output"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script src="/app.js?v=workstation-20260608af"></script>
+  </body>
+</html>

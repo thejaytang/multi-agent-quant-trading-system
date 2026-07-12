@@ -1,0 +1,14 @@
+lifecycle:
+  - idea
+  - ingested
+  - standardized
+  - adapted
+  - backtest_ready
+  - backtested
+  - paper_trading
+  - paper_validated
+  - live_candidate
+  - live_enabled
+  - retired
+default_status: idea
+live_enabled_default: false

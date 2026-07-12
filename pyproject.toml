@@ -1,0 +1,11 @@
+[project]
+name = "trading-os"
+version = "0.1.0"
+description = "Codex-operated multi-agent quantitative trading operating system"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

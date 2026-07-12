@@ -1,0 +1,8 @@
+reports:
+  daily: true
+  weekly: true
+  strategy: true
+  risk: true
+  capital: true
+  execution: true
+promotion_requires_leader_review: true

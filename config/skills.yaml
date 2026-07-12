@@ -1,0 +1,93 @@
+data:
+  - massive_price_fetch
+  - massive_news_fetch
+  - sec_edgar_fetch
+  - fred_macro_fetch
+  - ibkr_read_only_snapshot
+  - quantconnect_data_reference
+  - ohlcv_processing
+  - returns_calculation
+  - volatility_calculation
+  - data_quality_check
+  - timestamp_guard
+  - data_versioning
+research:
+  - news_analysis
+  - sentiment_scoring
+  - technical_analysis
+  - fundamental_analysis
+  - macro_regime_analysis
+  - bull_case_generation
+  - bear_case_generation
+  - bull_bear_cases
+  - red_team_challenge
+strategy:
+  - external_strategy_ingestion
+  - strategy_ingestion
+  - strategy_parsing
+  - strategy_normalization
+  - strategy_registry
+  - strategy_registry_management
+  - strategy_lifecycle
+  - strategy_lifecycle_management
+  - strategy_comparison
+  - strategy_selection
+  - experiment_registry
+  - experiment_registry_management
+  - feature_specification
+quant:
+  - python_implementation
+  - quantconnect_qcalgorithm_generation
+  - quantconnect_code_gen
+  - alpha_model_generation
+  - portfolio_model_generation
+  - risk_model_generation
+  - execution_model_generation
+  - signal_generator_generation
+  - schema_validation
+  - local_quick_backtest
+  - cost_slippage_model
+  - unit_test_generation
+  - bug_fixing
+  - repo_maintenance
+portfolio:
+  - account_aggregation
+  - capital_allocation
+  - liquidity_reserve_check
+  - fx_exposure_check
+  - treasury_transfer_suggestion
+  - strategy_allocation
+  - position_sizing
+  - cash_management
+risk:
+  - pre_trade_risk_check
+  - capital_risk_check
+  - position_limit_check
+  - drawdown_control
+  - paper_to_live_gate
+  - approval_gate_check
+  - api_key_leakage_check
+  - broker_mode_safety_check
+  - kill_switch
+broker:
+  - ibkr_account_snapshot
+  - position_reading
+  - cash_reading
+  - order_status_reading
+  - paper_order_execution
+  - approved_live_order_execution
+  - fill_monitoring
+  - execution_report_generation
+reporting:
+  - daily_report_generation
+  - weekly_report_generation
+  - strategy_report_generation
+  - capital_report_generation
+  - risk_report_generation
+  - execution_report_generation
+  - trade_review
+  - pnl_attribution
+  - tax_ledger_export
+  - dividend_record
+  - fx_record
+  - decision_log_summary

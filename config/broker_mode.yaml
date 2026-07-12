@@ -1,0 +1,6 @@
+broker: IBKR
+default_mode: paper
+live_enabled: false
+require_human_approval_for_live: true
+allow_natural_language_orders: false
+preferred_execution_path: QuantConnect

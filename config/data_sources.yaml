@@ -1,0 +1,23 @@
+market_data:
+  primary: Massive
+  status: stub
+  official_docs:
+    rest_llms: https://massive.com/docs/rest/llms.txt
+    websocket_llms: https://massive.com/docs/websocket/llms.txt
+news:
+  primary: Massive
+  status: stub
+  official_docs:
+    rest_llms: https://massive.com/docs/rest/llms.txt
+filings:
+  primary: SEC EDGAR
+  status: stub
+macro:
+  primary: FRED
+  status: stub
+broker_read_only:
+  primary: IBKR
+  status: stub
+quantconnect:
+  primary: QuantConnect
+  status: stub

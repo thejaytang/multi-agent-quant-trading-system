@@ -1,0 +1,2 @@
+class ExampleMovingAverageCrossAlphaModel:
+    mode = "paper"

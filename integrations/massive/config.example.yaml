@@ -1,0 +1,13 @@
+status: configured_stub
+external_connection: false
+external_requests_enabled: false
+credentials:
+  api_key_env: MASSIVE_API_KEY
+official_docs:
+  rest_llms: https://massive.com/docs/rest/llms.txt
+  websocket_llms: https://massive.com/docs/websocket/llms.txt
+  full_llms: https://massive.com/docs/llms.txt
+  mcp_repository: https://github.com/massive-com/mcp_massive
+rest_endpoints:
+  stocks_custom_bars: /v2/aggs/ticker/{stocksTicker}/range/{multiplier}/{timespan}/{from}/{to}
+  stocks_news: /v2/reference/news

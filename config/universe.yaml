@@ -1,0 +1,10 @@
+default_symbols:
+  - SPY
+  - QQQ
+  - AAPL
+  - MSFT
+asset_classes:
+  - equity
+  - etf
+allow_options: false
+allow_short_selling: false
