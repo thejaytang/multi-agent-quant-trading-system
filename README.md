@@ -1,4 +1,4 @@
-# trading-os
+# Multi-agent Quantitative Trading System
 
 `trading-os` is a Codex-operated multi-agent quantitative trading research and execution system. It is not a live trading bot. The current implementation is a safe local scaffold with stubs for external platforms and broker operations.
 
@@ -30,8 +30,6 @@ The system keeps 10 core agents:
 - `logs/`: agent, workflow, promotion, risk, broker, and system log locations.
 - `tests/`: schema, promotion, risk, order, workflow, security, integration, and agent tests.
 - `docs/`: architecture, policies, lifecycle, integration, and operating manual.
-
-## Run daily workflow
 
 ## Start a Codex or Claude Code session
 
